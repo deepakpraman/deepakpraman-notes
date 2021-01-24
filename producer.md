@@ -1,0 +1,20 @@
+# Producer
+
+## Console Producer
+
+```java
+./bin/kafka-console-producer --topic myTopic --broker-list localhost:9072
+```
+
+## Produce records with full key-value pairs
+
+```text
+./bin/kafka-console-producer --topic myTopic --broker-list localhost:9072  --property parse.key=true   --property key.separator=":"
+```
+
+## ack
+
+An acknowledgment \(ACK\) is a signal passed between communicating processes to signify acknowledgment, i.e., receipt of the message sent. The ack-value is a producer configuration parameter in Apache Kafka and can be set to the following values:
+
+acks=0 The producer never waits for an ack from the broker when the ack value is set to 0. No guarantee can be made that the broker has received the message. The producer doesn’t try to send the record again since the producer never knows that the record was lost. This setting provides lower latency and higher throughput at the cost of much higher risk of message loss. acks=1 When setting the ack value to 1, the producer gets an ack after the leader has received the record. The leader will write the record to its log but will respond without awaiting a full acknowledgment from all followers. The message will be lost only if the leader fails immediately after acknowledging the record, but before the followers have replicated it. This setting is the middle ground for latency, throughput, and durability. It is slower but more durable than acks=0. acks=all Setting the ack value to all means that the producer gets an ack when all in-sync replicas have received the record. The leader will wait for the full set of in-sync replicas to acknowledge the record. This means that it takes a longer time to send a message with ack value all, but it gives the strongest message durability.
+
