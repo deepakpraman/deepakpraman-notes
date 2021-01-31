@@ -10,22 +10,27 @@
 * download binaries
   * curl -O [http://packages.confluent.io/archive/5.3/confluent-community-5.3.3-2.12.zip](http://packages.confluent.io/archive/5.3/confluent-community-5.3.3-2.12.zip)
 * copy binaries
-  * \` mkdir confluent-kafka-5.3
 
-      mkdir confluent-kafka-5.3/data
+    `mkdir confluent-kafka-5.3`
 
-      mkdir confluent-kafka-5.3/software
+    `mkdir confluent-kafka-5.3/data`
 
-      unzip confluent-5.3.3-2.12.zip confluent-kafka-5.3/software\`
+    `mkdir confluent-kafka-5.3/software`
+
+    ``unzip confluent-5.3.3-2.12.zip confluent-kafka-5.3/software```
 
   * kafka 1
   * kafka 2
   * kafka 3
   * kafka 4
   * kafka 5
-  * `mkdir confluent-kafka-5.3 mkdir confluent-kafka-5.3/logs` 
-  * `mkdir confluent-kafka-5.3/software` 
-  * `unzip confluent-5.3.3-2.12.zip confluent-kafka-5.3/software`
+
+  `mkdir confluent-kafka-5.3 mkdir confluent-kafka-5.3/logs` 
+
+  `mkdir confluent-kafka-5.3/software` 
+
+  `unzip confluent-5.3.3-2.12.zip confluent-kafka-5.3/software`
+
   * zookeeper 1
 
     -echo '1' &gt;&gt;myid
@@ -59,6 +64,7 @@
   * kafka lag exporter
   * kafka lag tool
   * kafDrop
+
 * Start zookeeper
 * Start kafka
 * Start kafka lag exporter
