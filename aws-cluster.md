@@ -30,15 +30,19 @@
 * zookeeper 1
 
   `/confluent-kafka-5.3/zookeeper/logs` 
-
-* `echo '1' >>myid`
+  
+  `echo '1' >>myid`
 * zookeeper 2
 
-   echo '2' &gt;&gt;myid
+  `/confluent-kafka-5.3/zookeeper/logs` 
+  
+  `echo '2' >>myid`
 
 * zookeeper 3
 
-  echo '3' &gt;&gt;myid
+  `/confluent-kafka-5.3/zookeeper/logs` 
+  
+  `echo '3' >>myid`
 
 
 
