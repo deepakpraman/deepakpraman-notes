@@ -25,32 +25,45 @@
   * kafka 2
   * kafka 3
   * kafka 4
-  * kafka 5`mkdir confluent-kafka-5.3 mkdir` 
+  * kafka 5
 
-`confluent-kafka-5.3/logs mkdir` 
+* zookeeper 1
 
-`confluent-kafka-5.3/software` 
+  echo '1' &gt;&gt;myid
 
-* `sudo mv confluent-community-5.3.3-2.12.zip /confluent-kafka-5.3/software/ sudo unzip confluent-community-5.3.3-2.12.zip`
-
-zookeeper 1
-
-* -echo '1' &gt;&gt;myid
 * zookeeper 2
 
-  -echo '2' &gt;&gt;myid
+   echo '2' &gt;&gt;myid
 
 * zookeeper 3
 
-  -echo '3' &gt;&gt;myid
+  echo '3' &gt;&gt;myid
+
+
 
 * prometheus
+
+
+
 * grafana
+
+
+
 * kafka lag exporter
+
+
+
 * kafka lag tool
+
+
+
 * kafDrop
 
-  edit configuration files
+
+
+* edit configuration files
+
+
 
 * kafka 1
 * kafka 2
