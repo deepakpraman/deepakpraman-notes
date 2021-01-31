@@ -45,6 +45,7 @@
 
   `echo '3' >>myid`
 
+* export KAFKA\_HEAP\_OPTS="-Xmx512m -Xms512M"
 * prometheus
 * grafana
 * kafka lag exporter
