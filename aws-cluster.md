@@ -35,13 +35,13 @@
 
 * zookeeper 2
 
-  `/confluent-kafka-5.3/zookeeper/logs`
+  `cd /confluent-kafka-5.3/zookeeper/logs`
 
   `echo '2' >>myid`
 
 * zookeeper 3
 
-  `/confluent-kafka-5.3/zookeeper/logs`
+  `cd /confluent-kafka-5.3/zookeeper/logs`
 
   `echo '3' >>myid`
 
