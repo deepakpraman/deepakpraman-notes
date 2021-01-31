@@ -15,9 +15,11 @@
 
     `mkdir confluent-kafka-5.3/data`
 
-    `mkdir confluent-kafka-5.3/software`
+    `mkdir confluent-kafka-5.3/software`  
 
-    ``unzip confluent-5.3.3-2.12.zip confluent-kafka-5.3/software```
+    `sudo mv confluent-community-5.3.3-2.12.zip /confluent-kafka-5.3/software/`
+
+    `sudo unzip confluent-community-5.3.3-2.12.zip`
 
   * kafka 1
   * kafka 2
