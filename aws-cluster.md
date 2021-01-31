@@ -46,11 +46,6 @@
   `echo '3' >>myid`
 
 * export KAFKA\_HEAP\_OPTS="-Xmx512m -Xms512M"
-* prometheus
-* grafana
-* kafka lag exporter
-* kafka lag tool
-* kafDrop
 * edit configuration files
 * kafka 1
 * kafka 2
@@ -60,16 +55,20 @@
 * zookeeper 1
 * zookeeper 2
 * zookeeper 3
-* prometheus
-* grafana
-* kafka lag exporter
-* kafka lag tool
-* kafDrop
+
+
+
 * Start zookeeper
+* zookeeper 1
+* zookeeper 2
+* zookeeper 3
+
+
+
 * Start kafka
-* Start kafka lag exporter
-* Start prometheus
-* Start grafana
-* Start kafDrop
-* Start Lag tool
+* kafka 1
+* kafka 2
+* kafka 3
+* kafka 4
+* kafka 5
 

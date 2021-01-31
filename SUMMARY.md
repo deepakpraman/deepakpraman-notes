@@ -17,5 +17,6 @@
   * [CMAK](monitoring/cmak.md)
 * [High Availability Architecture](high-availability-architecture.md)
 * [AWS - Cluster](aws-cluster.md)
+* [Monitoring Kafka AWS Cluster](monitoring-kafka-aws-cluster.md)
 * [References](references.md)
 
