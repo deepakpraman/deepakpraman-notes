@@ -29,8 +29,9 @@
 
 * zookeeper 1
 
-  echo '1' &gt;&gt;myid
+  `/confluent-kafka-5.3/zookeeper/logs` 
 
+* `echo '1' >>myid`
 * zookeeper 2
 
    echo '2' &gt;&gt;myid
