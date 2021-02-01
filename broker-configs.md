@@ -12,21 +12,15 @@
   | Importance: | high |
   | Update Mode: | read-only |
 
-* **advertised.host.name**
+* **listeners**
 
-  DEPRECATED: only used when `advertised.listeners` or `listeners` are not set. Use `advertised.listeners` instead.  
-  Hostname to publish to ZooKeeper for clients to use. In IaaS environments, this may need to be different from the interface to which the broker binds. If this is not set, it will use the value for `host.name` if configured. Otherwise it will use the value returned from java.net.InetAddress.getCanonicalHostName\(\).
+  Listener List - Comma-separated list of URIs we will listen on and the listener names. If the listener name is not a security protocol, listener.security.protocol.map must also be set.  
+  Specify hostname as 0.0.0.0 to bind to all interfaces.  
+  Leave hostname empty to bind to default interface.  
+  Examples of legal listener lists:  
+  PLAINTEXT://myhost:9092,SSL://:9091  
+  CLIENT://0.0.0.0:9092,REPLICATION://localhost:9093  
 
-  | Type: | string |
-  | :--- | :--- |
-  | Default: | null |
-  | Valid Values: |  |
-  | Importance: | high |
-  | Update Mode: | read-only |
-
-* **advertised.listeners**
-
-  Listeners to publish to ZooKeeper for clients to use, if different than the `listeners` config property. In IaaS environments, this may need to be different from the interface to which the broker binds. If this is not set, the value for `listeners` will be used. Unlike `listeners` it is not valid to advertise the 0.0.0.0 meta-address.
 
   | Type: | string |
   | :--- | :--- |
@@ -35,6 +29,16 @@
   | Importance: | high |
   | Update Mode: | per-broker |
 
+* **advertised.listeners**
+
+Listeners to publish to ZooKeeper for clients to use, if different than the `listeners` config property. In IaaS environments, this may need to be different from the interface to which the broker binds. If this is not set, the value for `listeners` will be used. Unlike `listeners` it is not valid to advertise the 0.0.0.0 meta-address.
+
+* | Type: | string |
+  | :--- | :--- |
+  | Default: | null |
+  | Valid Values: |  |
+  | Importance: | high |
+  | Update Mode: | per-broker |
 * **advertised.port**
 
   DEPRECATED: only used when `advertised.listeners` or `listeners` are not set. Use `advertised.listeners` instead.  
@@ -120,6 +124,17 @@
   | Importance: | high |
   | Update Mode: | read-only |
 
+* **transaction.state.log.min.isr**
+
+  Overridden min.insync.replicas config for the transaction topic.
+
+  | Type: | int |
+  | :--- | :--- |
+  | Default: | 2 |
+  | Valid Values: | \[1,...\] |
+  | Importance: | high |
+  | Update Mode: | read-only |
+
 * **num.io.threads**
 
   The number of threads that the server uses for processing requests, which may include disk I/O
@@ -142,7 +157,7 @@
   | Importance: | high |
   | Update Mode: | cluster-wide |
 
-**log.dirs**
+* **log.dirs**
 
 The directories in which the log data is kept. If not set, the value in log.dir is used
 
@@ -152,6 +167,17 @@ The directories in which the log data is kept. If not set, the value in log.dir 
 | Valid Values: |  |
 | Importance: | high |
 | Update Mode: | read-only |
+
+* **num.partitions**
+
+  The default number of log partitions per topic
+
+  | Type: | int |
+  | :--- | :--- |
+  | Default: | 1 |
+  | Valid Values: | \[1,...\] |
+  | Importance: | medium |
+  | Update Mode: | read-only |
 
 * **offsets.topic.num.partitions**
 
@@ -182,6 +208,54 @@ The directories in which the log data is kept. If not set, the value in log.dir 
   | Type: | int |
   | :--- | :--- |
   | Default: | 168 |
+  | Valid Values: |  |
+  | Importance: | high |
+  | Update Mode: | read-only |
+
+* **host.name**
+
+  DEPRECATED: only used when `listeners` is not set. Use `listeners` instead.  
+  hostname of broker. If this is set, it will only bind to this address. If this is not set, it will bind to all interfaces
+
+  | Type: | string |
+  | :--- | :--- |
+  | Default: | "" |
+  | Valid Values: |  |
+  | Importance: | high |
+  | Update Mode: | read-only |
+
+
+
+* **advertised.host.name**
+
+  DEPRECATED: only used when `advertised.listeners` or `listeners` are not set. Use `advertised.listeners` instead.  
+  Hostname to publish to ZooKeeper for clients to use. In IaaS environments, this may need to be different from the interface to which the broker binds. If this is not set, it will use the value for `host.name` if configured. Otherwise it will use the value returned from java.net.InetAddress.getCanonicalHostName\(\).
+
+  | Type: | string |
+  | :--- | :--- |
+  | Default: | null |
+  | Valid Values: |  |
+  | Importance: | high |
+  | Update Mode: | read-only |
+
+* **transaction.state.log.min.isr**
+
+  Overridden min.insync.replicas config for the transaction topic.
+
+  | Type: | int |
+  | :--- | :--- |
+  | Default: | 2 |
+  | Valid Values: | \[1,...\] |
+  | Importance: | high |
+  | Update Mode: | read-only |
+
+* **zookeeper.connection.timeout.ms**
+
+  The max time that the client waits to establish a connection to zookeeper. If not set, the value in zookeeper.session.timeout.ms is used
+
+  | Type: | int |
+  | :--- | :--- |
+  | Default: | null |
   | Valid Values: |  |
   | Importance: | high |
   | Update Mode: | read-only |
