@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Topic](README.md)
+* [Broker Configs](broker-configs.md)
 * [Consumer](consumer/README.md)
   * [Consumer Group](consumer/consumer-group.md)
 * [Producer](producer.md)
