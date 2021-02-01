@@ -1,12 +1,31 @@
 # AWS - Cluster
 
 * Setup VMs
-  * sudo apt-get update
-  * sudo apt-get -y install wget ca-certificates zip net-tools vim nano tar netcat
+  * sudo yum update
+  * sudo yum -y install wget ca-certificates zip net-tools vim nano tar netcat
 * Setup java
-  * sudo apt-get -y install openjdk-8-jdk
-* set ulimit
+  * sudo yum -y install openjdk-8-jdk
+  * java -version
+* set ulimit  Add file limits configs - allow to open 100,000 file descriptors
+
+----------------------------------------------------------
+`echo "* hard nofile 100000
+soft nofile 100000" | sudo tee --append /etc/security/limits.conf`
+
+----------------------------------------------------------
+
 * add storage
+* Add hosts entries (mocking DNS) - put relevant IPs here
+
+----------------------------------------------------------
+  `  echo "ip1 kafka1
+    ip2 zookeeper1
+    ip3 kafka2
+    ip4 zookeeper2
+    ip5 kafka3
+    ip6 zookeeper3" | sudo tee --append /etc/hosts`
+
+-----------------------------------------------------------
 * download binaries
   * curl -O [http://packages.confluent.io/archive/5.3/confluent-community-5.3.3-2.12.zip](http://packages.confluent.io/archive/5.3/confluent-community-5.3.3-2.12.zip)
 * copy binaries
@@ -53,7 +72,7 @@
     - kafka 3
     - kafka 4
     - kafka 5
-    
+
     - zookeeper 1
     - zookeeper 2
     - zookeeper 3
@@ -73,4 +92,3 @@
   - kafka 3
   - kafka 4
   - kafka 5
-
