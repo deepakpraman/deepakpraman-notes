@@ -143,36 +143,36 @@
 
 * **transaction.state.log.num.partitions**
     
-      The number of partitions for the transaction topic \(should not change after deployment\).
+     The number of partitions for the transaction topic \(should not change after deployment\).
     
-      | Type: | int |
-      | :--- | :--- |
-      | Default: | 50 |
-      | Valid Values: | \[1,...\] |
-      | Importance: | high |
-      | Update Mode: | read-only |
+     | Type: | int |
+     | :--- | :--- |
+     | Default: | 50 |
+     | Valid Values: | \[1,...\] |
+     | Importance: | high |
+     | Update Mode: | read-only |
     
 * **transaction.state.log.replication.factor**
     
-      The replication factor for the transaction topic \(set higher to ensure availability\). Internal topic creation will fail until the cluster size meets this replication factor requirement.
+     The replication factor for the transaction topic \(set higher to ensure availability\). Internal topic creation will fail until the cluster size meets this replication factor requirement.
     
-      | Type: | short |
-      | :--- | :--- |
-      | Default: | 3 |
-      | Valid Values: | \[1,...\] |
-      | Importance: | high |
-      | Update Mode: | read-only |
+     | Type: | short |
+     | :--- | :--- |
+     | Default: | 3 |
+     | Valid Values: | \[1,...\] |
+     | Importance: | high |
+     | Update Mode: | read-only |
     
 * **transaction.state.log.min.isr**
     
-      Overridden min.insync.replicas config for the transaction topic.
+     Overridden min.insync.replicas config for the transaction topic.
     
-      | Type: | int |
-      | :--- | :--- |
-      | Default: | 2 |
-      | Valid Values: | \[1,...\] |
-      | Importance: | high |
-      | Update Mode: | read-only |
+     | Type: | int |
+     | :--- | :--- |
+     | Default: | 2 |
+     | Valid Values: | \[1,...\] |
+     | Importance: | high |
+     | Update Mode: | read-only |
 
 ## Thread Configuration
 
