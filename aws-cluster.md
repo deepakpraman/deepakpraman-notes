@@ -47,28 +47,30 @@
 
 * export KAFKA\_HEAP\_OPTS="-Xmx512m -Xms512M"
 * edit configuration files
-* kafka 1
-* kafka 2
-* kafka 3
-* kafka 4
-* kafka 5
-* zookeeper 1
-* zookeeper 2
-* zookeeper 3
+
+    - kafka 1
+    - kafka 2
+    - kafka 3
+    - kafka 4
+    - kafka 5
+    
+    - zookeeper 1
+    - zookeeper 2
+    - zookeeper 3
 
 
 
 * Start zookeeper
-* zookeeper 1
-* zookeeper 2
-* zookeeper 3
+  - zookeeper 1
+  - zookeeper 2
+  - zookeeper 3
 
 
 
 * Start kafka
-* kafka 1
-* kafka 2
-* kafka 3
-* kafka 4
-* kafka 5
+  - kafka 1
+  - kafka 2
+  - kafka 3
+  - kafka 4
+  - kafka 5
 
