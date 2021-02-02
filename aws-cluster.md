@@ -5,7 +5,18 @@
   * sudo yum -y install wget ca-certificates zip net-tools vim nano tar netcat
 * Setup java
   * sudo yum -y install openjdk-8-jdk
-  * java -version
+  
+  ----------------------------------------------------------
+    `vi ~/.bash_profile
+    export JAVA_HOME=/apps/jdk1.8.0_131/
+    export PATH=$PATH:/apps/jdk1.8.0_131/bin
+    source ~/.bash_profile
+    echo $JAVA_HOME
+    echo $PATH`
+
+ ----------------------------------------------------------
+* java -version
+
 * set ulimit  Add file limits configs - allow to open 100,000 file descriptors
 
 ----------------------------------------------------------
@@ -38,7 +49,8 @@ soft nofile 100000" | sudo tee --append /etc/security/limits.conf`
 
   `sudo mv confluent-community-5.3.3-2.12.zip /confluent-kafka-5.3/software/`
 
-  `sudo unzip confluent-community-5.3.3-2.12.zip`
+  `sudo unzip confluent-community-5.3.3-2.12.zip or tar xzf confluent-community-5.3.3-2.12.tar`
+   
 
   * kafka 1
   * kafka 2
