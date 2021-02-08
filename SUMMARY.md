@@ -1,7 +1,8 @@
 # Table of contents
 
-* [Topic](README.md)
-* [Kafka Overview](kafka-overview/README.md)
+* [Kafka 101](README.md)
+* [Kafka Components](kafka-overview/README.md)
+  * [Topic](kafka-overview/topic.md)
   * [Consumer](kafka-overview/consumer/README.md)
     * [Consumer Group](kafka-overview/consumer/consumer-group.md)
   * [Producer](kafka-overview/producer.md)

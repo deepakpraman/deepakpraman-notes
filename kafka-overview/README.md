@@ -1,2 +1,2 @@
-# Kafka Overview
+# Kafka Components
 
