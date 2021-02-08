@@ -20,4 +20,5 @@
 * [AWS - Cluster](aws-cluster.md)
 * [Monitoring Kafka AWS Cluster](monitoring-kafka-aws-cluster.md)
 * [References](references.md)
+* [Kafka Overview](kafka-overview.md)
 
