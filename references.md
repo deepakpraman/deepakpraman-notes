@@ -1,20 +1,32 @@
 # References
 
-## References
 
-[https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html](https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html) [https://medium.com/better-programming/kafka-acks-explained-c0515b3b707e](https://medium.com/better-programming/kafka-acks-explained-c0515b3b707e) [https://blog.hiya.com/hiyas-best-practices-around-kafka-consistency-and-availability/](https://blog.hiya.com/hiyas-best-practices-around-kafka-consistency-and-availability/) [https://docs.cloudera.com/documentation/kafka/latest/topics/kafka\_ha.html](https://docs.cloudera.com/documentation/kafka/latest/topics/kafka_ha.html)
+## Kafka Configuration explained
+- [Min-ISR](https://www.cloudkarafka.com/blog/2019-09-28-what-does-in-sync-in-apache-kafka-really-mean.html)
+- [ACK](https://medium.com/better-programming/kafka-acks-explained-c0515b3b707e)
 
-[https://blog.knoldus.com/apache-kafka-topic-partitions-replicas-isr/](https://blog.knoldus.com/apache-kafka-topic-partitions-replicas-isr/)
+## Architecture Recommendations and Best practices
 
-Stackoverflow [https://stackoverflow.com/questions/61203211/should-topic-partitions-be-replicated-across-all-broker-nodes-in-a-kafka-cluster](https://stackoverflow.com/questions/61203211/should-topic-partitions-be-replicated-across-all-broker-nodes-in-a-kafka-cluster) [https://stackoverflow.com/questions/58806481/what-is-the-maximum-replication-factor-for-a-partition-of-kafka-topic](https://stackoverflow.com/questions/58806481/what-is-the-maximum-replication-factor-for-a-partition-of-kafka-topic) [https://stackoverflow.com/questions/65719831/kafka-replication-factor-for-5-node-broker-cluster](https://stackoverflow.com/questions/65719831/kafka-replication-factor-for-5-node-broker-cluster)
+  ### Best Practises
+    1.[kafka-consistency-and-availability](https://blog.hiya.com/hiyas-best-practices-around-kafka-consistency-and-availability)
 
-additional reading [https://docs.cloudera.com/documentation/enterprise/latest/topics/kafka\_faq.html](https://docs.cloudera.com/documentation/enterprise/latest/topics/kafka_faq.html) [https://docs.cloudera.com/runtime/7.2.2/kafka-overview/topics/kafka-overview-topics.html](https://docs.cloudera.com/runtime/7.2.2/kafka-overview/topics/kafka-overview-topics.html) [https://docs.confluent.io/home/kafka-design.html\#replica-management](https://docs.confluent.io/home/kafka-design.html#replica-management)
 
-[https://engineering.linkedin.com/kafka/benchmarking-apache-kafka-2-million-writes-second-three-cheap-machines](https://engineering.linkedin.com/kafka/benchmarking-apache-kafka-2-million-writes-second-three-cheap-machines)
 
-[https://www.infoq.com/articles/apache-kafka-best-practices-to-optimize-your-deployment/](https://www.infoq.com/articles/apache-kafka-best-practices-to-optimize-your-deployment/) [https://dzone.com/articles/understanding-kafka-consumer-groups-and-consumer-l](https://dzone.com/articles/understanding-kafka-consumer-groups-and-consumer-l)
+  ### Forums
 
-[https://jaceklaskowski.gitbooks.io/apache-kafka/content/kafka-tools-kafka-consumer-groups.html](https://jaceklaskowski.gitbooks.io/apache-kafka/content/kafka-tools-kafka-consumer-groups.html)
+  - [should-topic-partitions-be-replicated-across-all-broker-nodes-in-a-kafka-cluster](https://stackoverflow.com/questions/61203211/should-topic-partitions-be-replicated-across-all-broker-nodes-in-a-kafka-cluster)
+  - [what-is-the-maximum-replication-factor-for-a-partition-of-kafka-topic](https://stackoverflow.com/questions/58806481/what-is-the-maximum-replication-factor-for-a-partition-of-kafka-topic)
+  - [kafka-replication-factor-for-5-node-broker-cluster](https://stackoverflow.com/questions/65719831/kafka-replication-factor-for-5-node-broker-cluster)
+  - [apache-kafka-best-practices-to-optimize-your-deployment/](https://www.infoq.com/articles/apache-kafka-best-practices-to-optimize-your-deployment/)
 
-[https://youtu.be/R6OKibnXpBs](https://youtu.be/R6OKibnXpBs)
+  https://stackoverflow.com/questions/56888050/what-exactly-does-transaction-state-log-min-isr-mean
+  https://stackoverflow.com/questions/47483016/recommended-settings-for-kafka-internal-topics-after-upgrade-to-1-0
+  https://stackoverflow.com/questions/60828448/if-isr-is-less-than-replication-factor-and-producer-acks-are-set-to-all-how-man
 
+  ### Monitoring
+  [Kafka Performance: Best Practices for Monitoring and Improving](https://youtu.be/R6OKibnXpBs)
+
+  [kafka-open-source-monitoring-tools](https://sematext.com/blog/kafka-open-source-monitoring-tools/)
+
+
+## Kafka Tutorials
