@@ -1,10 +1,11 @@
 # Table of contents
 
 * [Topic](README.md)
-* [Broker Configs](broker-configs.md)
-* [Consumer](consumer/README.md)
-  * [Consumer Group](consumer/consumer-group.md)
-* [Producer](producer.md)
+* [Kafka Overview](kafka-overview/README.md)
+  * [Consumer](kafka-overview/consumer/README.md)
+    * [Consumer Group](kafka-overview/consumer/consumer-group.md)
+  * [Producer](kafka-overview/producer.md)
+  * [Broker Configs](kafka-overview/broker-configs.md)
 * [Monitoring](monitoring/README.md)
   * [KafDrop](monitoring/kafdrop.md)
   * [Lag Monitoring Tool](monitoring/lag-monitoring-tool.md)
@@ -18,7 +19,6 @@
   * [CMAK](monitoring/cmak.md)
 * [High Availability Architecture](high-availability-architecture.md)
 * [AWS - Cluster](aws-cluster.md)
-* [Monitoring Kafka AWS Cluster](monitoring-kafka-aws-cluster.md)
+* [Monitoring](monitoring-kafka-aws-cluster.md)
 * [References](references.md)
-* [Kafka Overview](kafka-overview.md)
 

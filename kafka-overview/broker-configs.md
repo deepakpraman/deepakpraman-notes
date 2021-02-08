@@ -15,16 +15,15 @@
   | Update Mode: | read-only |
 
 * **zookeeper.connection.timeout.ms**
-  
-    The max time that the client waits to establish a connection to zookeeper. If not set, the value in zookeeper.session.timeout.ms is used
-  
-    | Type: | int |
-    | :--- | :--- |
-    | Default: | null |
-    | Valid Values: |  |
-    | Importance: | high |
-    | Update Mode: | read-only |
 
+  The max time that the client waits to establish a connection to zookeeper. If not set, the value in zookeeper.session.timeout.ms is used
+
+  | Type: | int |
+  | :--- | :--- |
+  | Default: | null |
+  | Valid Values: |  |
+  | Importance: | high |
+  | Update Mode: | read-only |
 
 ## Server Basics
 
@@ -48,15 +47,14 @@
   Leave hostname empty to bind to default interface.  
   Examples of legal listener lists:  
   PLAINTEXT://myhost:9092,SSL://:9091  
-  CLIENT://0.0.0.0:9092,REPLICATION://localhost:9093  
+  CLIENT://0.0.0.0:9092,REPLICATION://localhost:9093
 
-
-  | Type: | string |
-  | :--- | :--- |
-  | Default: | null |
-  | Valid Values: |  |
-  | Importance: | high |
-  | Update Mode: | per-broker |
+| Type: | string |
+| :--- | :--- |
+| Default: | null |
+| Valid Values: |  |
+| Importance: | high |
+| Update Mode: | per-broker |
 
 * **advertised.listeners**
 
@@ -82,28 +80,28 @@
   | Update Mode: | read-only |
 
 * **host.name**
-  
-    DEPRECATED: only used when `listeners` is not set. Use `listeners` instead.  
-    hostname of broker. If this is set, it will only bind to this address. If this is not set, it will bind to all interfaces
-  
-    | Type: | string |
-    | :--- | :--- |
-    | Default: | "" |
-    | Valid Values: |  |
-    | Importance: | high |
-    | Update Mode: | read-only |
-  
+
+  DEPRECATED: only used when `listeners` is not set. Use `listeners` instead.  
+  hostname of broker. If this is set, it will only bind to this address. If this is not set, it will bind to all interfaces
+
+  | Type: | string |
+  | :--- | :--- |
+  | Default: | "" |
+  | Valid Values: |  |
+  | Importance: | high |
+  | Update Mode: | read-only |
+
 * **advertised.host.name**
-  
-    DEPRECATED: only used when `advertised.listeners` or `listeners` are not set. Use `advertised.listeners` instead.  
-    Hostname to publish to ZooKeeper for clients to use. In IaaS environments, this may need to be different from the interface to which the broker binds. If this is not set, it will use the value for `host.name` if configured. Otherwise it will use the value returned from java.net.InetAddress.getCanonicalHostName\(\).
-  
-    | Type: | string |
-    | :--- | :--- |
-    | Default: | null |
-    | Valid Values: |  |
-    | Importance: | high |
-    | Update Mode: | read-only |
+
+  DEPRECATED: only used when `advertised.listeners` or `listeners` are not set. Use `advertised.listeners` instead.  
+  Hostname to publish to ZooKeeper for clients to use. In IaaS environments, this may need to be different from the interface to which the broker binds. If this is not set, it will use the value for `host.name` if configured. Otherwise it will use the value returned from java.net.InetAddress.getCanonicalHostName\(\).
+
+  | Type: | string |
+  | :--- | :--- |
+  | Default: | null |
+  | Valid Values: |  |
+  | Importance: | high |
+  | Update Mode: | read-only |
 
 ## Transaction Topic Default Configuration
 
@@ -119,60 +117,60 @@
   | Update Mode: | cluster-wide |
 
 * **num.partitions**
-  
-    The default number of log partitions per topic
-  
-    | Type: | int |
-    | :--- | :--- |
-    | Default: | 1 |
-    | Valid Values: | \[1,...\] |
-    | Importance: | medium |
-    | Update Mode: | read-only |
+
+  The default number of log partitions per topic
+
+  | Type: | int |
+  | :--- | :--- |
+  | Default: | 1 |
+  | Valid Values: | \[1,...\] |
+  | Importance: | medium |
+  | Update Mode: | read-only |
 
 * **min.insync.replicas**
-  
-    When a producer sets acks to "all" \(or "-1"\), min.insync.replicas specifies the minimum number of replicas that must acknowledge a write for the write to be considered successful. If this minimum cannot be met, then the producer will raise an exception \(either NotEnoughReplicas or NotEnoughReplicasAfterAppend\).  
-    When used together, min.insync.replicas and acks allow you to enforce greater durability guarantees. A typical scenario would be to create a topic with a replication factor of 3, set min.insync.replicas to 2, and produce with acks of "all". This will ensure that the producer raises an exception if a majority of replicas do not receive a write.
-  
-    | Type: | int |
-    | :--- | :--- |
-    | Default: | 1 |
-    | Valid Values: | \[1,...\] |
-    | Importance: | high |
-    | Update Mode: | cluster-wide |
+
+  When a producer sets acks to "all" \(or "-1"\), min.insync.replicas specifies the minimum number of replicas that must acknowledge a write for the write to be considered successful. If this minimum cannot be met, then the producer will raise an exception \(either NotEnoughReplicas or NotEnoughReplicasAfterAppend\).  
+  When used together, min.insync.replicas and acks allow you to enforce greater durability guarantees. A typical scenario would be to create a topic with a replication factor of 3, set min.insync.replicas to 2, and produce with acks of "all". This will ensure that the producer raises an exception if a majority of replicas do not receive a write.
+
+  | Type: | int |
+  | :--- | :--- |
+  | Default: | 1 |
+  | Valid Values: | \[1,...\] |
+  | Importance: | high |
+  | Update Mode: | cluster-wide |
 
 * **transaction.state.log.num.partitions**
-    
-     The number of partitions for the transaction topic \(should not change after deployment\).
-    
-     | Type: | int |
-     | :--- | :--- |
-     | Default: | 50 |
-     | Valid Values: | \[1,...\] |
-     | Importance: | high |
-     | Update Mode: | read-only |
-    
+
+  The number of partitions for the transaction topic \(should not change after deployment\).
+
+  | Type: | int |
+  | :--- | :--- |
+  | Default: | 50 |
+  | Valid Values: | \[1,...\] |
+  | Importance: | high |
+  | Update Mode: | read-only |
+
 * **transaction.state.log.replication.factor**
-    
-     The replication factor for the transaction topic \(set higher to ensure availability\). Internal topic creation will fail until the cluster size meets this replication factor requirement.
-    
-     | Type: | short |
-     | :--- | :--- |
-     | Default: | 3 |
-     | Valid Values: | \[1,...\] |
-     | Importance: | high |
-     | Update Mode: | read-only |
-    
+
+  The replication factor for the transaction topic \(set higher to ensure availability\). Internal topic creation will fail until the cluster size meets this replication factor requirement.
+
+  | Type: | short |
+  | :--- | :--- |
+  | Default: | 3 |
+  | Valid Values: | \[1,...\] |
+  | Importance: | high |
+  | Update Mode: | read-only |
+
 * **transaction.state.log.min.isr**
-    
-     Overridden min.insync.replicas config for the transaction topic.
-    
-     | Type: | int |
-     | :--- | :--- |
-     | Default: | 2 |
-     | Valid Values: | \[1,...\] |
-     | Importance: | high |
-     | Update Mode: | read-only |
+
+  Overridden min.insync.replicas config for the transaction topic.
+
+  | Type: | int |
+  | :--- | :--- |
+  | Default: | 2 |
+  | Valid Values: | \[1,...\] |
+  | Importance: | high |
+  | Update Mode: | read-only |
 
 ## Thread Configuration
 
@@ -236,25 +234,24 @@
 ## Offset Topics Configuration
 
 * **offsets.topic.num.partitions**
-  
-    The number of partitions for the offset commit topic \(should not change after deployment\)
-  
-    | Type: | int |
-    | :--- | :--- |
-    | Default: | 50 |
-    | Valid Values: | \[1,...\] |
-    | Importance: | high |
-    | Update Mode: | read-only |
-  
-* **offsets.topic.replication.factor**
-  
-    The replication factor for the offsets topic \(set higher to ensure availability\). Internal topic creation will fail until the cluster size meets this replication factor requirement.
-  
-    | Type: | short |
-    | :--- | :--- |
-    | Default: | 3 |
-    | Valid Values: | \[1,...\] |
-    | Importance: | high |
-    | Update Mode: | read-only |
 
+  The number of partitions for the offset commit topic \(should not change after deployment\)
+
+  | Type: | int |
+  | :--- | :--- |
+  | Default: | 50 |
+  | Valid Values: | \[1,...\] |
+  | Importance: | high |
+  | Update Mode: | read-only |
+
+* **offsets.topic.replication.factor**
+
+  The replication factor for the offsets topic \(set higher to ensure availability\). Internal topic creation will fail until the cluster size meets this replication factor requirement.
+
+  | Type: | short |
+  | :--- | :--- |
+  | Default: | 3 |
+  | Valid Values: | \[1,...\] |
+  | Importance: | high |
+  | Update Mode: | read-only |
 
