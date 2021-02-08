@@ -1,4 +1,4 @@
-# AWS - Cluster
+# Cluster Setup
 
 * Setup VMs
   * sudo yum update

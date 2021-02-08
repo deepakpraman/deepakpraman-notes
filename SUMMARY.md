@@ -21,7 +21,7 @@
     * [Burrow Exporter](monitoring/burrow/burrow-exporter.md)
   * [CMAK](monitoring/cmak.md)
 * [High Availability Architecture](high-availability-architecture.md)
-* [AWS - Cluster](aws-cluster.md)
+* [Cluster Setup](aws-cluster.md)
 * [Monitoring](monitoring-kafka-aws-cluster.md)
 * [References](references.md)
 
