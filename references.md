@@ -8,7 +8,7 @@
 ## Architecture Recommendations and Best practices
 
   ### Best Practises
-    1.[kafka-consistency-and-availability](https://blog.hiya.com/hiyas-best-practices-around-kafka-consistency-and-availability)
+  1.[kafka-consistency-and-availability](https://blog.hiya.com/hiyas-best-practices-around-kafka-consistency-and-availability)
 
 
 
@@ -24,6 +24,7 @@
   https://stackoverflow.com/questions/60828448/if-isr-is-less-than-replication-factor-and-producer-acks-are-set-to-all-how-man
 
   ### Monitoring
+  
   [Kafka Performance: Best Practices for Monitoring and Improving](https://youtu.be/R6OKibnXpBs)
 
   [kafka-open-source-monitoring-tools](https://sematext.com/blog/kafka-open-source-monitoring-tools/)
