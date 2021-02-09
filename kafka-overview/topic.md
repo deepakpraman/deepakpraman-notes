@@ -42,17 +42,15 @@ Topics are configured with a replication-factor, which determines the number of 
 
 A replica is either the leader of its partition, or a follower of the leader. A follower can either be in-sync with the leader \(contains all the partition-leader’s messages, except for messages within a small buffer window\), or out-of-sync. The set of all in-sync replicas \(including the partition-leader\) is referred to as the ISR.
 
-#### Minimum In-Sync Replica
+### min.insync.replicas
+When a producer sets acks to "all" (or "-1"), this configuration specifies the minimum number of replicas that must acknowledge a write for the write to be considered successful. If this minimum cannot be met, then the producer will raise an exception (either NotEnoughReplicas or NotEnoughReplicasAfterAppend).
+When used together, min.insync.replicas and acks allow you to enforce greater durability guarantees. A typical scenario would be to create a topic with a replication factor of 3, set min.insync.replicas to 2, and produce with acks of "all". This will ensure that the producer raises an exception if a majority of replicas do not receive a write.
 
-The minimum number of in-sync replicas specify how many replicas that are needed to be available for the producer to successfully send records to a partition.
-
-OR
-
-min.insync.replicas is a config on the broker that denotes the minimum number of in-sync replicas required to exist for a broker to allow acks=all requests.
-
-Distribution
-
-Geo Replication
+Type:	int
+Default:	1
+Valid Values:	[1,...]
+Server Default Property:	min.insync.replicas
+Importance:	medium
 
 ### TODO
 
