@@ -1,4 +1,4 @@
-# Broker Configs
+# Broker
 
 ## Zookeeper Configs
 
