@@ -18,13 +18,25 @@
 * [kafka-replication-factor-for-5-node-broker-cluster](https://stackoverflow.com/questions/65719831/kafka-replication-factor-for-5-node-broker-cluster)
 * [apache-kafka-best-practices-to-optimize-your-deployment/](https://www.infoq.com/articles/apache-kafka-best-practices-to-optimize-your-deployment/)
 
-  [https://stackoverflow.com/questions/56888050/what-exactly-does-transaction-state-log-min-isr-mean](https://stackoverflow.com/questions/56888050/what-exactly-does-transaction-state-log-min-isr-mean) [https://stackoverflow.com/questions/47483016/recommended-settings-for-kafka-internal-topics-after-upgrade-to-1-0](https://stackoverflow.com/questions/47483016/recommended-settings-for-kafka-internal-topics-after-upgrade-to-1-0) [https://stackoverflow.com/questions/60828448/if-isr-is-less-than-replication-factor-and-producer-acks-are-set-to-all-how-man](https://stackoverflow.com/questions/60828448/if-isr-is-less-than-replication-factor-and-producer-acks-are-set-to-all-how-man)
+ * [https://stackoverflow.com/questions/56888050/what-exactly-does-transaction-state-log-min-isr-mean](https://stackoverflow.com/questions/56888050/what-exactly-does-transaction-state-log-min-isr-mean) 
+ * [https://stackoverflow.com/questions/47483016/recommended-settings-for-kafka-internal-topics-after-upgrade-to-1-0](https://stackoverflow.com/questions/47483016/recommended-settings-for-kafka-internal-topics-after-upgrade-to-1-0) 
+ * [https://stackoverflow.com/questions/60828448/if-isr-is-less-than-replication-factor-and-producer-acks-are-set-to-all-how-man](https://stackoverflow.com/questions/60828448/if-isr-is-less-than-replication-factor-and-producer-acks-are-set-to-all-how-man)
 
-  **Monitoring**
+### Monitoring
 
-  [Kafka Performance: Best Practices for Monitoring and Improving](https://youtu.be/R6OKibnXpBs)
+  * [Kafka Performance: Best Practices for Monitoring and Improving](https://youtu.be/R6OKibnXpBs)
 
-  [kafka-open-source-monitoring-tools](https://sematext.com/blog/kafka-open-source-monitoring-tools/)
+  * [kafka-open-source-monitoring-tools](https://sematext.com/blog/kafka-open-source-monitoring-tools/)
+  
+  	* https://blog.newrelic.com/engineering/new-relic-kafkapocalypse/
+		Retention
+		Replication
+		Consumer Lag
+		
+	* https://engineering.linkedin.com/blog/2016/05/open-sourcing-kafka-monitor	
+	* https://docs.cloudera.com/runtime/7.2.6/kafka-managing/topics/kafka-manage-essential-metrics.html
+	* https://docs.unraveldata.com/en/usecase-kafka-monitoring-best-practice.html	
+	* https://howtoprogram.xyz/2016/06/04/write-apache-kafka-custom-partitioner/
 
 ## Kafka Tutorials
 
