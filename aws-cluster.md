@@ -1,5 +1,7 @@
 # Cluster Setup
 
+**Setting up the Platform**
+
 * Setup VMs
   * sudo yum update
   * sudo yum -y install wget ca-certificates zip net-tools vim nano tar netcat
@@ -19,6 +21,10 @@
 
 `echo "ip1 kafka1 ip2 zookeeper1 ip3 kafka2 ip4 zookeeper2 ip5 kafka3 ip6 zookeeper3" | sudo tee --append /etc/hosts`
 
+* export KAFKA\_HEAP\_OPTS="-Xmx512m -Xms512M"
+
+**Get Confluent Kafka \(Community Edition\) Software**
+
 * download binaries
   * curl -O [http://packages.confluent.io/archive/5.3/confluent-community-5.3.3-2.12.zip](http://packages.confluent.io/archive/5.3/confluent-community-5.3.3-2.12.zip)
 * copy binaries
@@ -33,11 +39,8 @@
 
   `sudo unzip confluent-community-5.3.3-2.12.zip or tar xzf confluent-community-5.3.3-2.12.tar`
 
-* kafka 1
-* kafka 2
-* kafka 3
-* kafka 4
-* kafka 5
+**Setting up Zookeeper**
+
 * zookeeper 1
 
   `cd /confluent-kafka-5.3/zookeeper/logs`
@@ -56,16 +59,18 @@
 
   `echo '3' >>myid`
 
-* export KAFKA\_HEAP\_OPTS="-Xmx512m -Xms512M"
+**Setting up Brokers**
+
 * edit configuration files
+
   * kafka 1
   * kafka 2
   * kafka 3
   * kafka 4
   * kafka 5
-  * zookeeper 1
-  * zookeeper 2
-  * zookeeper 3
+
+**Starting the Applications**
+
 * Start zookeeper
   * zookeeper 1
   * zookeeper 2
