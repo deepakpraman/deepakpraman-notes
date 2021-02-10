@@ -33,10 +33,10 @@
 		Replication
 		Consumer Lag
 		
-	* https://engineering.linkedin.com/blog/2016/05/open-sourcing-kafka-monitor	
-	* https://docs.cloudera.com/runtime/7.2.6/kafka-managing/topics/kafka-manage-essential-metrics.html
-	* https://docs.unraveldata.com/en/usecase-kafka-monitoring-best-practice.html	
-	* https://howtoprogram.xyz/2016/06/04/write-apache-kafka-custom-partitioner/
+  * https://engineering.linkedin.com/blog/2016/05/open-sourcing-kafka-monitor	
+  * https://docs.cloudera.com/runtime/7.2.6/kafka-managing/topics/kafka-manage-essential-metrics.html
+  * https://docs.unraveldata.com/en/usecase-kafka-monitoring-best-practice.html	
+  * https://howtoprogram.xyz/2016/06/04/write-apache-kafka-custom-partitioner/
 
 ## Kafka Tutorials
 
