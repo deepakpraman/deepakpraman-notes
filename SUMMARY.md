@@ -11,7 +11,6 @@
   * [Zookeeper](kafka-overview/zookeeper.md)
   * [Schema Registry](kafka-overview/schema-registry.md)
 * [Cluster Setup](aws-cluster.md)
-* [Cluster Testing](cluster-testing.md)
 * [High Availability Architecture](high-availability-architecture.md)
 * [Monitoring](monitoring/README.md)
   * [KafDrop](monitoring/kafdrop.md)
@@ -24,5 +23,6 @@
   * [Burrow](monitoring/burrow/README.md)
     * [Burrow Exporter](monitoring/burrow/burrow-exporter.md)
   * [CMAK](monitoring/cmak.md)
+* [Cluster Testing](cluster-testing.md)
 * [References](references.md)
 
