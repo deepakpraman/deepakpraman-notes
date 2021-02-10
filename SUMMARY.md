@@ -7,6 +7,8 @@
   * [Consumer](kafka-overview/consumer.md)
   * [Producer](kafka-overview/producer.md)
   * [Zookeeper](kafka-overview/zookeeper.md)
+* [Cluster Setup](aws-cluster.md)
+* [High Availability Architecture](high-availability-architecture.md)
 * [Monitoring](monitoring/README.md)
   * [KafDrop](monitoring/kafdrop.md)
   * [Lag Monitoring Tool](monitoring/lag-monitoring-tool.md)
@@ -18,8 +20,5 @@
   * [Burrow](monitoring/burrow/README.md)
     * [Burrow Exporter](monitoring/burrow/burrow-exporter.md)
   * [CMAK](monitoring/cmak.md)
-* [High Availability Architecture](high-availability-architecture.md)
-* [Cluster Setup](aws-cluster.md)
-* [Monitoring](monitoring-kafka-aws-cluster.md)
 * [References](references.md)
 
