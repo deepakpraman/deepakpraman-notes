@@ -2,11 +2,14 @@
 
 * [Kafka 101](README.md)
 * [Kafka Components](kafka-overview/README.md)
-  * [Topic](kafka-overview/topic.md)
-  * [Broker](kafka-overview/broker-configs.md)
+  * [Topic](kafka-overview/topic/README.md)
+    * [Partitioning](kafka-overview/topic/partitioning.md)
+  * [Broker](kafka-overview/broker-configs/README.md)
+    * [Replication](kafka-overview/broker-configs/replication.md)
   * [Consumer](kafka-overview/consumer.md)
   * [Producer](kafka-overview/producer.md)
   * [Zookeeper](kafka-overview/zookeeper.md)
+  * [Schema Registry](kafka-overview/schema-registry.md)
 * [Cluster Setup](aws-cluster.md)
 * [High Availability Architecture](high-availability-architecture.md)
 * [Monitoring](monitoring/README.md)
@@ -20,5 +23,6 @@
   * [Burrow](monitoring/burrow/README.md)
     * [Burrow Exporter](monitoring/burrow/burrow-exporter.md)
   * [CMAK](monitoring/cmak.md)
+* [Cluster Testing](cluster-testing.md)
 * [References](references.md)
 
