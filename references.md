@@ -7,11 +7,11 @@
 
 ## OS and Hardware
 
-[https://docs.confluent.io/5.5.0/installation/system-requirements.html](https://docs.confluent.io/5.5.0/installation/system-requirements.html)
+[Confluent:system-requirements.html](https://docs.confluent.io/5.5.0/installation/system-requirements.html)
 
-[https://docs.cloudera.com/documentation/enterprise/latest/topics/kafka\_setup.html](https://docs.cloudera.com/documentation/enterprise/latest/topics/kafka_setup.html)
+[Cloudera: kafka\_setup.html](https://docs.cloudera.com/documentation/enterprise/latest/topics/kafka_setup.html)
 
-
+[Cloudera:](https://docs.cloudera.com/documentation/enterprise/latest/topics/kafka_setup.html)[kafka\_system\_level\_broker\_tuning.html](https://docs.cloudera.com/documentation/enterprise/latest/topics/kafka_system_level_broker_tuning.html)
 
 ## Architecture Recommendations and Best practices
 
@@ -50,4 +50,8 @@
 * [https://howtoprogram.xyz/2016/06/04/write-apache-kafka-custom-partitioner/](https://howtoprogram.xyz/2016/06/04/write-apache-kafka-custom-partitioner/)
 
 ## Kafka Tutorials
+
+
+
+[https://docs.cloudera.com/documentation/enterprise/latest/topics/kafka\_ref\_shell\_commands.html\#kafka\_ref\_shell\_commands](https://docs.cloudera.com/documentation/enterprise/latest/topics/kafka_ref_shell_commands.html#kafka_ref_shell_commands)
 
