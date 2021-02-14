@@ -32,6 +32,8 @@
 * [https://stackoverflow.com/questions/56888050/what-exactly-does-transaction-state-log-min-isr-mean](https://stackoverflow.com/questions/56888050/what-exactly-does-transaction-state-log-min-isr-mean) 
 * [https://stackoverflow.com/questions/47483016/recommended-settings-for-kafka-internal-topics-after-upgrade-to-1-0](https://stackoverflow.com/questions/47483016/recommended-settings-for-kafka-internal-topics-after-upgrade-to-1-0) 
 * [https://stackoverflow.com/questions/60828448/if-isr-is-less-than-replication-factor-and-producer-acks-are-set-to-all-how-man](https://stackoverflow.com/questions/60828448/if-isr-is-less-than-replication-factor-and-producer-acks-are-set-to-all-how-man)
+* [https://stackoverflow.com/questions/62790868/kafka-duplicates-some-messages-hundreds-of-times](https://stackoverflow.com/questions/62790868/kafka-duplicates-some-messages-hundreds-of-times)
+* [https://jack-vanlightly.com/blog/2018/9/18/how-to-lose-messages-on-a-kafka-cluster-part-2](https://jack-vanlightly.com/blog/2018/9/18/how-to-lose-messages-on-a-kafka-cluster-part-2)
 
 ### Monitoring
 
@@ -51,7 +53,5 @@
 
 ## Kafka Tutorials
 
-
-
-[https://docs.cloudera.com/documentation/enterprise/latest/topics/kafka\_ref\_shell\_commands.html\#kafka\_ref\_shell\_commands](https://docs.cloudera.com/documentation/enterprise/latest/topics/kafka_ref_shell_commands.html#kafka_ref_shell_commands)
+[kafka\_ref\_shell\_commands](https://docs.cloudera.com/documentation/enterprise/latest/topics/kafka_ref_shell_commands.html#kafka_ref_shell_commands)
 
