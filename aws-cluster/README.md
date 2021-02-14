@@ -1,20 +1,19 @@
 # Cluster Setup
 
 ## Setting up the Platform
---------------------------
 
 ### Setup VMs
-  * sudo yum update
-  * sudo yum -y install wget ca-certificates zip net-tools vim nano tar netcat
+
+* sudo yum update
+* sudo yum -y install wget ca-certificates zip net-tools vim nano tar netcat
 
 ### Setup java
 
-  * sudo yum -y install openjdk-8-jdk
+* sudo yum -y install openjdk-8-jdk
 
-   `vi ~/.bash_profile`
+  `vi ~/.bash_profile`
 
-  `export JAVA_HOME=/apps/jdk1.8.0_131/
-   export PATH=$PATH:/apps/jdk1.8.0_131/bin`
+  `export JAVA_HOME=/apps/jdk1.8.0_131/ export PATH=$PATH:/apps/jdk1.8.0_131/bin`
 
   `source ~/.bash_profile`
 
@@ -33,7 +32,6 @@
 `echo "ip1 kafka1 ip2 zookeeper1 ip3 kafka2 ip4 zookeeper2 ip5 kafka3 ip6 zookeeper3" | sudo tee --append /etc/hosts`
 
 ## Setting up Kafka
---------------------
 
 * export KAFKA\_HEAP\_OPTS="-Xmx512m -Xms512M"
 
@@ -77,22 +75,7 @@
 
 * edit configuration files
 
-`
-broker.id=1
-host.name={ip}
-advertised.host.name={ip}
-listeners=PLAINTEXT://{ip}:9092
-advertised.listeners=PLAINTEXT://{ip}:9092
-num.io.threads=20
-num.network.threads=20
-log.dirs=/confluent-kafka-5.3/data/
-num.partitions=6
-offsets.topic.replication.factor=3
-transaction.state.log.replication.factor=3
-transaction.state.log.min.isr=3
-log.retention.hours=72
-zookeeper.connect=zookeeper1:2181,zookeeper2:2181,zookeeper3:2181
-zookeeper.connection.timeout.ms=30000`
+`broker.id=1 host.name={ip} advertised.host.name={ip} listeners=PLAINTEXT://{ip}:9092 advertised.listeners=PLAINTEXT://{ip}:9092 num.io.threads=20 num.network.threads=20 log.dirs=/confluent-kafka-5.3/data/ num.partitions=6 offsets.topic.replication.factor=3 transaction.state.log.replication.factor=3 transaction.state.log.min.isr=3 log.retention.hours=72 zookeeper.connect=zookeeper1:2181,zookeeper2:2181,zookeeper3:2181 zookeeper.connection.timeout.ms=30000`
 
 Repeat for all nodes 1..5
 
@@ -102,10 +85,10 @@ Repeat for all nodes 1..5
   * zookeeper 1
   * zookeeper 2
   * zookeeper 3
-
 * Start kafka
   * kafka 1
   * kafka 2
   * kafka 3
   * kafka 4
   * kafka 5
+
