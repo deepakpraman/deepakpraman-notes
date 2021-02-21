@@ -26,15 +26,15 @@
 
 ### Modify Topic 
 
-//TODO
+**//TODO**
+
+Change the number of partitions and replication factor of a Topic
 
 ### Delete a Topic
 
 ```text
 ./bin/kafka-topics --zookeeper localhost:2181 --delete --topic kafka-canary-topic
 ```
-
-Change the number of partitions and replication factor of a Topic
 
 ## Partitions
 
