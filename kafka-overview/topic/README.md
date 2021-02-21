@@ -12,7 +12,7 @@
 ./bin/kafka-topics.sh --list --zookeeper localhost:2181
 ```
 
-### Describe a Topic
+### Describe  Topic
 
 ```text
 ./bin/kafka-topics --describe --zookeeper localhost:2181 --topic myTopic
@@ -24,13 +24,15 @@
 ./bin/kafka-run-class kafka.tools.GetOffsetShell --broker-list localhost:9092 --time -1 --topic myTopic
 ```
 
+### Modify Topic 
+
+//TODO
+
 ### Delete a Topic
 
 ```text
 ./bin/kafka-topics --zookeeper localhost:2181 --delete --topic kafka-canary-topic
 ```
-
-## TODO
 
 Change the number of partitions and replication factor of a Topic
 
