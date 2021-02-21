@@ -39,5 +39,6 @@
   * [Zookeeper Failure](cluster-testing/zookeeper-failure.md)
   * [Network Failure](cluster-testing/network-failure.md)
   * [Hard Disk Usage](cluster-testing/hard-disk-usage.md)
+  * [Performance Testing](cluster-testing/performance-testing.md)
 * [References](references.md)
 
