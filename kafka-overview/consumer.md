@@ -12,3 +12,9 @@
 ./bin/kafka-console-consumer --topic myTopic --bootstrap-server localhost:9072  --property print.key=true  --property key.separator=":"  --partition x  --offset y
 ```
 
+**Consumer Group Info**
+
+```text
+./bin/kafka-consumer-groups  --bootstrap-server kb1:9092 --all-groups --describe --timeout 50000
+```
+

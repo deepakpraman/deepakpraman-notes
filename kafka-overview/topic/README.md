@@ -8,9 +8,7 @@
 
 ### Topic List
 
-Once you're strong enough, save the world:
-
-```java
+```
 ./bin/kafka-topics.sh --list --zookeeper localhost:2181
 ```
 
@@ -24,6 +22,12 @@ Once you're strong enough, save the world:
 
 ```text
 ./bin/kafka-run-class kafka.tools.GetOffsetShell --broker-list localhost:9092 --time -1 --topic myTopic
+```
+
+### Delete a Topic
+
+```text
+./bin/kafka-topics --zookeeper localhost:2181 --delete --topic kafka-canary-topic
 ```
 
 ## TODO
