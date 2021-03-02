@@ -7,6 +7,7 @@
 * sudo yum update
 * sudo yum -y install wget ca-certificates zip net-tools vim nano tar netcat
 * add storage
+* define storage paths for brokers
 * Add hosts entries \(mocking DNS\) - put relevant IPs here
 
 ```text

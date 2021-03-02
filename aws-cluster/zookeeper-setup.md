@@ -18,3 +18,7 @@
 
   `echo '3' >>myid`
 
+//TODO 
+
+zookeeper.properties
+

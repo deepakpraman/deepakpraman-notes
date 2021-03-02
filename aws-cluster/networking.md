@@ -18,3 +18,5 @@ By default the Confluent Platform components use these ports to communicate. The
 | Schema Registry REST API | 8081 |
 | ZooKeeper | 2181, 2888, 3888 |
 
+//TODO additional ports for tools
+
