@@ -1,9 +1,5 @@
 # OS
 
-#### 
-
-## OS
-
 **Kernel Limits**
 
 There are three settings you must configure properly for the kernel.
