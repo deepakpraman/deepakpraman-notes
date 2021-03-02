@@ -25,7 +25,7 @@
   * [Consumer Metrics](monitoring/consumer-metrics.md)
   * [Zookeeper Metrics](monitoring/zookeeper-metrics.md)
   * [Topic Information](monitoring/topic-information.md)
-* [Monitoring Tools](tools/README.md)
+* [Monitoring : Tools](tools/README.md)
   * [KafDrop](tools/kafdrop.md)
   * [Prometheus](tools/monitoring-prometheus/README.md)
     * [JMX Exporter](tools/monitoring-prometheus/jmx-exporter.md)
