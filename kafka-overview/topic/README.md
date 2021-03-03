@@ -9,7 +9,7 @@
 ### Topic List
 
 ```
-./bin/kafka-topics.sh --list --zookeeper localhost:2181
+./bin/kafka-topics --list --zookeeper localhost:2181
 ```
 
 ### Describe  Topic
