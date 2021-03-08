@@ -35,17 +35,5 @@ By default the Confluent Platform components use these ports to communicate. The
 | Kafka-Lag-Exporter | 9080 |
 | kafka-canary | 8085 |
 
-## Configuring firewall
 
-Configure firewall for **ZooKeeper**.
-
-`sudo firewall-cmd --permanent --add-port={2888,3888,2181}/tcpsudo firewall-cmd --reloadCopy`
-
-Configure firewall for **Kafka**.
-
-`sudo firewall-cmd --permanent --add-port=9092/tcpsudo firewall-cmd --reloadCopy`
-
- Verifythe changes.
-
-`firewall-cmd --list-services`
 

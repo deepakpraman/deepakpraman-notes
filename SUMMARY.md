@@ -13,6 +13,7 @@
 * [Cluster Setup](aws-cluster/README.md)
   * [Sizing](aws-cluster/sizing.md)
   * [Hardware](aws-cluster/hardware.md)
+  * [Storage](aws-cluster/storage.md)
   * [OS](aws-cluster/os.md)
   * [Networking](aws-cluster/networking.md)
   * [Java Configurations](aws-cluster/java-configurations.md)
