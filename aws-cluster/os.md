@@ -21,11 +21,25 @@ echo "* hard nofile 100000 soft nofile 100000" | sudo tee --append /etc/security
 
 You must configure this in your specific kernel settings. We recommend a configuration of 32000 or higher.
 
+`vi /etc/sysctl.conf` 
+
+`vm.max_map_count=32000`
+
+to reload configuration with new value
+
+ `sudo sysctl -p`
+
 ## Max Socket Buffer Size
 
 Set the buffer size larger than any Kafka send buffers that you define.
 
 ## VM Swappiness
+
+echo 1 &gt; /proc/sys/vm/swappiness
+
+sysctl -w vm.swappiness=1
+
+echo "vm.swappiness = 1" &gt;&gt; /etc/sysctl.conf
 
 ## Synchronize Time
 
