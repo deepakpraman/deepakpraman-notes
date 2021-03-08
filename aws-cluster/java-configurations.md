@@ -15,7 +15,7 @@ java -version
 
 
 
-* export KAFKA\_HEAP\_OPTS="-Xmx512m -Xms512M"
+* export KAFKA\_HEAP\_OPTS="-Xmx6g -Xms6g"
 
 ### Production Configuration
 
