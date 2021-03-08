@@ -1,6 +1,6 @@
 # Storage
 
-* add storage ssd \(6 ssd drives\)
+* Add storage ssd \(6 ssd drives\)
 * Recommended File system : XFS
 * create volume group
 * mount the drives
