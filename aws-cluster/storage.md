@@ -1,7 +1,5 @@
 # Storage
 
-
-
 | File System | XFS |
 | :--- | :--- |
 
