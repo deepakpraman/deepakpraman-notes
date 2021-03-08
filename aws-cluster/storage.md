@@ -1,15 +1,10 @@
 # Storage
 
-| File System | XFS |
-| :--- | :--- |
-
-
-* add storage ssds 
+* add storage ssd \(6 ssd drives\)
+* Recommended File system : XFS
 * create volume group
-* mount the drives 
+* mount the drives
 * define storage paths for brokers
-
-## 
 
 | filesystem | Size | Mounted on |
 | :--- | :--- | :--- |
