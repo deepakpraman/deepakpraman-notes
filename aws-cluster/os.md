@@ -1,5 +1,16 @@
 # OS
 
+\*\*\*\*
+
+| Component | Description |
+| :--- | :--- |
+| Number of VMs | 3 |
+| Operating System | **RHEL 8** |
+| File System | XFS |
+| Privileges | **ROOT** access prefered |
+
+\*\*\*\*
+
 **Kernel Limits**
 
 There are three settings you must configure properly for the kernel.
