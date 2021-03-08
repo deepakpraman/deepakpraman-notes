@@ -6,8 +6,6 @@
 
 * sudo yum update
 * sudo yum -y install wget ca-certificates zip net-tools vim nano tar netcat
-* add storage
-* define storage paths for brokers
 * Add hosts entries \(mocking DNS\) - put relevant IPs here
 
 ```text
@@ -21,6 +19,12 @@ echo "ip1 kafka1
 ```
 
 
+
+## Storage 
+
+* add storage ssds
+* mount the drives 
+* define storage paths for brokers
 
 ### **Production Configurations**
 
