@@ -32,5 +32,36 @@ echo "* hard nofile 100000 soft nofile 100000" | sudo tee --append /etc/security
   Set the buffer size larger than any Kafka send buffers that you define.
 
 * VM Swappiness
-* Synchronize time
+
+## Synchronize Time
+
+* **Add Google NTP Server**
+
+  sed -i '/^pool/c\pool time.google.com iburst' /etc/chrony.conf
+
+  **Set timezone to Asia/Colombo**
+
+  timedatectl set-timezone Asia/Colombo
+
+  **Enable NTP time synchronization**
+
+  timedatectl set-ntp true
+
+## Start and enable chronyd service
+
+systemctl enable --now chronyd && systemctl status chronyd
+
+
+
+## Verify synchronisation state
+
+ntpstat
+
+## Check Chrony Source Statistics
+
+chronyc sourcestats -v
+
+## Start and enable NTP service.
+
+systemctl restart ntpd.service && systemctl enable ntpd.service
 
